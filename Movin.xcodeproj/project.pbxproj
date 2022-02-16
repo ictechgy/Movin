@@ -79,12 +79,20 @@
 		C9D9436B27BBD499007EE79F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9D9437427BD1D94007EE79F /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9D9437427BD1D94007EE79F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
 				C9D9436C27BBD52A007EE79F /* APIConfiguration.swift */,
 				C9D9436E27BBF488007EE79F /* MovieList.swift */,
 				C9D9437027BCDB0E007EE79F /* MovieDetail.swift */,
 				C9D9437227BD0F93007EE79F /* Participants.swift */,
 			);
-			path = Model;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
