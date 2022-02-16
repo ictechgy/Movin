@@ -31,6 +31,7 @@ struct MovieDetail: Decodable {
     let isNormalVideo: Bool?
     let numberOfUsersEvaluated: Int?
     let averageUserScore: Double?
+    let participants: Participants?
     
     enum CodingKeys: String, CodingKey {
         case id, status, tagline, title, overview, popularity
@@ -53,6 +54,7 @@ struct MovieDetail: Decodable {
         case isNormalVideo = "video"
         case numberOfUsersEvaluated = "vote_count"
         case averageUserScore = "vote_average"
+        case participants = "credits"
     }
 }
 
