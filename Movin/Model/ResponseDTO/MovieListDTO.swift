@@ -1,16 +1,16 @@
 //
-//  MovieList.swift
+//  MovieListDTO.swift
 //  Movin
 //
 //  Created by JINHONG AN on 2022/02/15.
 //
 
-struct MovieList: Decodable {
+struct MovieListDTO: Decodable {
     let page: Int?
-    let entries: [Movie]?
+    let entries: [MovieDTO]?
     let totalNumberOfPages: Int?
     let totalNumberOfResults: Int?
-    let releaseDateRange: ReleaseDateRange?
+    let releaseDateRange: ReleaseDateRangeDTO?
     
     enum CodingKeys: String, CodingKey {
         case page
@@ -21,7 +21,7 @@ struct MovieList: Decodable {
     }
 }
 
-struct Movie: Decodable {
+struct MovieDTO: Decodable {
     let id: Int?
     let title: String?
     let overview: String?
@@ -52,7 +52,7 @@ struct Movie: Decodable {
     }
 }
 
-struct ReleaseDateRange: Decodable {
+struct ReleaseDateRangeDTO: Decodable {
     let startDate: String?
     let endDate: String?
     

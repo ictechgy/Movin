@@ -1,16 +1,16 @@
 //
-//  MovieDetail.swift
+//  MovieDetailDTO.swift
 //  Movin
 //
 //  Created by JINHONG AN on 2022/02/16.
 //
 
-struct MovieDetail: Decodable {
+struct MovieDetailDTO: Decodable {
     let isAdultMovie: Bool?
     let backdropPath: String?
-    let seriesInformation: SeriesInformation?
+    let seriesInformation: SeriesInformationDTO?
     let productionCostDollars: Int?
-    let genreCategories: [Genre]?
+    let genreCategories: [GenreDTO]?
     let movieHomepageURL: String?
     let id: Int?
     let imdbID: String?
@@ -19,19 +19,19 @@ struct MovieDetail: Decodable {
     let overview: String?
     let popularity: Double?
     let posterPath: String?
-    let productionCompanies: [Company]?
-    let productionCountries: [Country]?
+    let productionCompanies: [CompanyDTO]?
+    let productionCountries: [CountryDTO]?
     let releaseDate: String?
     let revenueDollars: Int?
     let runningTime: Int?
-    let languagesInMovie: [Language]?
+    let languagesInMovie: [LanguageDTO]?
     let status: String?
     let tagline: String?
     let title: String?
     let isNormalVideo: Bool?
     let numberOfUsersEvaluated: Int?
     let averageUserScore: Double?
-    let participants: Participants?
+    let participants: ParticipantsDTO?
     
     enum CodingKeys: String, CodingKey {
         case id, status, tagline, title, overview, popularity
@@ -58,7 +58,7 @@ struct MovieDetail: Decodable {
     }
 }
 
-struct SeriesInformation: Decodable {
+struct SeriesInformationDTO: Decodable {
     let id: Int?
     let name: String?
     let posterPath: String?
@@ -71,12 +71,12 @@ struct SeriesInformation: Decodable {
     }
 }
 
-struct Genre: Decodable {
+struct GenreDTO: Decodable {
     let id: Int?
     let name: String?
 }
 
-struct Company: Decodable {
+struct CompanyDTO: Decodable {
     let name: String?
     let id: Int?
     let logoPath: String?
@@ -89,7 +89,7 @@ struct Company: Decodable {
     }
 }
 
-struct Country: Decodable {
+struct CountryDTO: Decodable {
     let uniqueCode: String?
     let name: String?
     
@@ -99,7 +99,7 @@ struct Country: Decodable {
     }
 }
 
-struct Language: Decodable {
+struct LanguageDTO: Decodable {
     let uniqueCode: String?
     let name: String?
     let englishName: String?

@@ -1,12 +1,12 @@
 //
-//  APIConfiguration.swift
+//  APIConfigurationDTO.swift
 //  Movin
 //
 //  Created by JINHONG AN on 2022/02/15.
 //
 
-struct APIConfiguration: Decodable {
-    let imageConfiguration: ImageConfiguration?
+struct APIConfigurationDTO: Decodable {
+    let imageConfiguration: ImageConfigurationDTO?
     let changeLogKeys: [String]?
     
     enum CodingKeys: String, CodingKey {
@@ -15,7 +15,7 @@ struct APIConfiguration: Decodable {
     }
 }
 
-struct ImageConfiguration: Decodable {
+struct ImageConfigurationDTO: Decodable {
     let baseURL: String?
     let secureBaseURL: String?
     let backdropSizes: [String]?

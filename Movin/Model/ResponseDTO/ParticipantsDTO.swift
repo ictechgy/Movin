@@ -1,14 +1,14 @@
 //
-//  Participants.swift
+//  ParticipantsDTO.swift
 //  Movin
 //
 //  Created by JINHONG AN on 2022/02/16.
 //
 
-struct Participants: Decodable {
+struct ParticipantsDTO: Decodable {
     let id: Int?
-    let actors: [Actor]?
-    let crews: [Crew]?
+    let actors: [ActorDTO]?
+    let crews: [CrewDTO]?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -17,7 +17,7 @@ struct Participants: Decodable {
     }
 }
 
-struct Actor: Decodable {
+struct ActorDTO: Decodable {
     let isAdult: Bool?
     let gender: Int?
     let id: Int?
@@ -44,7 +44,7 @@ struct Actor: Decodable {
     }
 }
 
-struct Crew: Decodable {
+struct CrewDTO: Decodable {
     let isAdult: Bool?
     let gender: Int?
     let id: Int?
