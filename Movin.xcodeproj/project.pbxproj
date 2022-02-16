@@ -17,6 +17,7 @@
 		C9D9436F27BBF488007EE79F /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9436E27BBF488007EE79F /* MovieList.swift */; };
 		C9D9437127BCDB0E007EE79F /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9437027BCDB0E007EE79F /* MovieDetail.swift */; };
 		C9D9437327BD0F93007EE79F /* Participants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9437227BD0F93007EE79F /* Participants.swift */; };
+		C9D9437727BD5A39007EE79F /* SearchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9437627BD5A39007EE79F /* SearchRequestDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C9D9436E27BBF488007EE79F /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		C9D9437027BCDB0E007EE79F /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		C9D9437227BD0F93007EE79F /* Participants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participants.swift; sourceTree = "<group>"; };
+		C9D9437627BD5A39007EE79F /* SearchRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C9D9436B27BBD499007EE79F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9D9437527BD59D2007EE79F /* RequestDTO */,
 				C9D9437427BD1D94007EE79F /* Entity */,
 			);
 			path = Model;
@@ -93,6 +96,14 @@
 				C9D9437227BD0F93007EE79F /* Participants.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		C9D9437527BD59D2007EE79F /* RequestDTO */ = {
+			isa = PBXGroup;
+			children = (
+				C9D9437627BD5A39007EE79F /* SearchRequestDTO.swift */,
+			);
+			path = RequestDTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 				C9D9437127BCDB0E007EE79F /* MovieDetail.swift in Sources */,
 				C9D9436F27BBF488007EE79F /* MovieList.swift in Sources */,
 				C9D9436D27BBD52A007EE79F /* APIConfiguration.swift in Sources */,
+				C9D9437727BD5A39007EE79F /* SearchRequestDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
