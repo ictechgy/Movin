@@ -21,6 +21,16 @@ struct MovieListDTO: Decodable {
     }
 }
 
+extension MovieListDTO {
+    func toDomain() -> MovieList {
+        return MovieList(currentPage: page,
+                         entries: entries?.map { $0.toDomain() },
+                         totalNumberOfPages: totalNumberOfPages,
+                         totalNumberOfResults: totalNumberOfResults,
+                         releaseDateRange: releaseDateRange?.toDomain())
+    }
+}
+
 struct MovieDTO: Decodable {
     let id: Int?
     let title: String?
@@ -52,6 +62,18 @@ struct MovieDTO: Decodable {
     }
 }
 
+extension MovieDTO {
+    func toDomain() -> Movie {
+        return Movie(id: id,
+                     title: title,
+                     posterPath: posterPath,
+                     releaseDate: releaseDate,
+                     popularity: popularity,
+                     averageUserScore: averageUserScore,
+                     isAdultMovie: isAdultMovie)
+    }
+}
+
 struct ReleaseDateRangeDTO: Decodable {
     let startDate: String?
     let endDate: String?
@@ -59,5 +81,11 @@ struct ReleaseDateRangeDTO: Decodable {
     enum CodingKeys: String, CodingKey {
         case startDate = "minimum"
         case endDate = "maximum"
+    }
+}
+
+extension ReleaseDateRangeDTO {
+    func toDomain() -> ReleaseDateRange {
+        return ReleaseDateRange(startDate: startDate, endDate: endDate)
     }
 }
