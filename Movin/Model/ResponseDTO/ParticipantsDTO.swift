@@ -44,6 +44,19 @@ struct ActorDTO: Decodable {
     }
 }
 
+extension ActorDTO {
+    func toDomain() -> Actor {
+        return Actor(gender: gender,
+                     id: id,
+                     famousField: famousField,
+                     name: name,
+                     originalName: originalName,
+                     profilePath: profilePath,
+                     characterName: characterName,
+                     introductionOrder: introductionOrder)
+    }
+}
+
 struct CrewDTO: Decodable {
     let isAdult: Bool?
     let gender: Int?

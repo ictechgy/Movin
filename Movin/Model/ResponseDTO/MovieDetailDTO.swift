@@ -75,7 +75,7 @@ extension MovieDetailDTO {
                            title: title,
                            numberOfUsersEvaluated: numberOfUsersEvaluated,
                            averageUserScore: averageUserScore,
-                           actors: nil)
+                           actors: participants?.actors?.map { $0.toDomain() })
     }
 }
 
