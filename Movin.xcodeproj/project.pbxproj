@@ -22,6 +22,7 @@
 		C9D9437B27BD7A95007EE79F /* MovieDetailRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D9437A27BD7A95007EE79F /* MovieDetailRequestDTO.swift */; };
 		C9D943BF27C24DDF007EE79F /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943BE27C24DDF007EE79F /* MovieList.swift */; };
 		C9D943C127C29402007EE79F /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943C027C29402007EE79F /* MovieDetail.swift */; };
+		C9D943C527C29B4F007EE79F /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943C427C29B4F007EE79F /* Actor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C9D9437A27BD7A95007EE79F /* MovieDetailRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRequestDTO.swift; sourceTree = "<group>"; };
 		C9D943BE27C24DDF007EE79F /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		C9D943C027C29402007EE79F /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		C9D943C427C29B4F007EE79F /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				C9D943BE27C24DDF007EE79F /* MovieList.swift */,
 				C9D943C027C29402007EE79F /* MovieDetail.swift */,
+				C9D943C427C29B4F007EE79F /* Actor.swift */,
 			);
 			path = ResponseEntity;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				C9D9435827BB7CBE007EE79F /* AppDelegate.swift in Sources */,
 				C9D9437327BD0F93007EE79F /* ParticipantsDTO.swift in Sources */,
 				C9D943C127C29402007EE79F /* MovieDetail.swift in Sources */,
+				C9D943C527C29B4F007EE79F /* Actor.swift in Sources */,
 				C9D9435A27BB7CBE007EE79F /* SceneDelegate.swift in Sources */,
 				C9D9437927BD7854007EE79F /* NowPlayingMovieRequestDTO.swift in Sources */,
 				C9D943BF27C24DDF007EE79F /* MovieList.swift in Sources */,

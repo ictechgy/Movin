@@ -21,7 +21,7 @@ struct MovieDetail {
     let title: String?
     let numberOfUsersEvaluated: Int?
     let averageUserScore: Double?
-    let participants: ParticipantsDTO?
+    let actors: [Actor]?
 }
 
 struct Genre {
