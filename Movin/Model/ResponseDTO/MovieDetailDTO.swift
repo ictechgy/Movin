@@ -58,6 +58,27 @@ struct MovieDetailDTO: Decodable {
     }
 }
 
+extension MovieDetailDTO {
+    func toDomain() -> MovieDetail {
+        return MovieDetail(isAdultMovie: isAdultMovie,
+                           backdropPath: backdropPath,
+                           genreCategories: genreCategories?.map { $0.toDomain() },
+                           id: id,
+                           originalTitle: originalTitle,
+                           overview: overview,
+                           posterPath: posterPath,
+                           productionCompanies: productionCompanies?.map { $0.toDomain() },
+                           releaseDate: releaseDate,
+                           runningTime: runningTime,
+                           status: status,
+                           tagline: tagline,
+                           title: title,
+                           numberOfUsersEvaluated: numberOfUsersEvaluated,
+                           averageUserScore: averageUserScore,
+                           actors: nil)
+    }
+}
+
 struct SeriesInformationDTO: Decodable {
     let id: Int?
     let name: String?
@@ -76,6 +97,12 @@ struct GenreDTO: Decodable {
     let name: String?
 }
 
+extension GenreDTO {
+    func toDomain() -> Genre {
+        return Genre(id: id, name: name)
+    }
+}
+
 struct CompanyDTO: Decodable {
     let name: String?
     let id: Int?
@@ -86,6 +113,15 @@ struct CompanyDTO: Decodable {
         case id, name
         case logoPath = "logo_path"
         case originCountry = "origin_country"
+    }
+}
+
+extension CompanyDTO {
+    func toDomain() -> Company {
+        return Company(name: name,
+                       id: id,
+                       logoPath: logoPath,
+                       originCountry: originCountry)
     }
 }
 
