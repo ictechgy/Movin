@@ -7,7 +7,7 @@
 
 struct MovieDetailRequestDTO {
     let language: Language
-    let desiredAdditionalResponse: [String]?
+    let desiredAdditionalResponse: [DesiredAdditionalInformation]
     
     enum CodingKeys: String, CodingKey {
         case language
@@ -19,7 +19,7 @@ extension MovieDetailRequestDTO: Encodable {
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(language.isoCode, forKey: .language)
-        try container.encode(desiredAdditionalResponse?.joined(separator: ","),
+        try container.encode(desiredAdditionalResponse.map { $0.description }.joined(separator: ","),
                              forKey: .desiredAdditionalResponse)
     }
 }
