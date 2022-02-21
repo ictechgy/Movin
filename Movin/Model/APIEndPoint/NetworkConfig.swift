@@ -15,7 +15,7 @@ protocol NetworkConfigurable {
 struct NetworkConfig: NetworkConfigurable {
     let baseURLPath: String = "https://api.themoviedb.org/"
     let headers: [String : String]? = {
-        guard let tokenValue = Bundle.main.infoDictionary?["APIReadAccessToken"] as? String else {
+        guard let tokenValue = Bundle.main.object(forInfoDictionaryKey: "API_Read_Access_Token") as? String else {
             return nil
         }
         
