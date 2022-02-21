@@ -10,11 +10,3 @@ struct NowPlayingMovieRequest {
     let language: Language?
     let region: String?
 }
-
-extension NowPlayingMovieRequest {
-    func toDTO() -> NowPlayingMovieRequestDTO {
-        return NowPlayingMovieRequestDTO(page: page,
-                                         language: language ?? .korean,
-                                         region: region)
-    }
-}
