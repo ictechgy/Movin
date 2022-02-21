@@ -9,7 +9,7 @@ struct MovieSearchRequestDTO {
     let query: String
     let page: Int
     let language: Language
-    let region: String?
+    let region: Region
     
     enum CodingKeys: String, CodingKey {
         case query, page, language, region
@@ -22,6 +22,6 @@ extension MovieSearchRequestDTO: Encodable {
         try container.encode(query, forKey: .query)
         try container.encode(page, forKey: .page)
         try container.encode(language.isoCode, forKey: .language)
-        try container.encode(region, forKey: .region)
+        try container.encode(region.isoCode, forKey: .region)
     }
 }

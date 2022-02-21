@@ -8,5 +8,5 @@
 struct NowPlayingMovieRequest {
     let page: Int
     let language: Language?
-    let region: String?
+    let region: Region?
 }
