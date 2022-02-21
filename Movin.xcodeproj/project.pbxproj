@@ -27,6 +27,7 @@
 		C9D943CB27C3967D007EE79F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943CA27C3967D007EE79F /* Language.swift */; };
 		C9D943CD27C3E027007EE79F /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943CC27C3E027007EE79F /* Region.swift */; };
 		C9D943D127C3F363007EE79F /* MovieDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D027C3F363007EE79F /* MovieDetailRequest.swift */; };
+		C9D943D327C3FAC4007EE79F /* MovieSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D227C3FAC4007EE79F /* MovieSearchRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C9D943CA27C3967D007EE79F /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		C9D943CC27C3E027007EE79F /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		C9D943D027C3F363007EE79F /* MovieDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRequest.swift; sourceTree = "<group>"; };
+		C9D943D227C3FAC4007EE79F /* MovieSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				C9D943C727C2BA83007EE79F /* NowPlayingMovieRequest.swift */,
 				C9D943D027C3F363007EE79F /* MovieDetailRequest.swift */,
+				C9D943D227C3FAC4007EE79F /* MovieSearchRequest.swift */,
 			);
 			path = RequestEntity;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				C9D9435A27BB7CBE007EE79F /* SceneDelegate.swift in Sources */,
 				C9D9437927BD7854007EE79F /* NowPlayingMovieRequestDTO.swift in Sources */,
 				C9D943BF27C24DDF007EE79F /* MovieList.swift in Sources */,
+				C9D943D327C3FAC4007EE79F /* MovieSearchRequest.swift in Sources */,
 				C9D9437127BCDB0E007EE79F /* MovieDetailDTO.swift in Sources */,
 				C9D943CD27C3E027007EE79F /* Region.swift in Sources */,
 				C9D9436F27BBF488007EE79F /* MovieListDTO.swift in Sources */,
