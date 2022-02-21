@@ -60,6 +60,7 @@
 		C9D943D527C3FC01007EE79F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		C9D943D727C41324007EE79F /* EndPointFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointFactory.swift; sourceTree = "<group>"; };
 		C9D943D927C41716007EE79F /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		C9D943DB27C420C8007EE79F /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		C9D9434B27BB7CBE007EE79F = {
 			isa = PBXGroup;
 			children = (
+				C9D943DB27C420C8007EE79F /* Secrets.xcconfig */,
 				C9D9435627BB7CBE007EE79F /* Movin */,
 				C9D9435527BB7CBE007EE79F /* Products */,
 			);
@@ -304,6 +306,7 @@
 /* Begin XCBuildConfiguration section */
 		C9D9436627BB7CBF007EE79F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D943DB27C420C8007EE79F /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -365,6 +368,7 @@
 		};
 		C9D9436727BB7CBF007EE79F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D943DB27C420C8007EE79F /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
