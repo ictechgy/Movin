@@ -30,6 +30,7 @@
 		C9D943D327C3FAC4007EE79F /* MovieSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D227C3FAC4007EE79F /* MovieSearchRequest.swift */; };
 		C9D943D627C3FC01007EE79F /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D527C3FC01007EE79F /* EndPoint.swift */; };
 		C9D943D827C41324007EE79F /* EndPointFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D727C41324007EE79F /* EndPointFactory.swift */; };
+		C9D943DA27C41716007EE79F /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D927C41716007EE79F /* NetworkConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C9D943D227C3FAC4007EE79F /* MovieSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchRequest.swift; sourceTree = "<group>"; };
 		C9D943D527C3FC01007EE79F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		C9D943D727C41324007EE79F /* EndPointFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointFactory.swift; sourceTree = "<group>"; };
+		C9D943D927C41716007EE79F /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		C9D943D427C3FBC4007EE79F /* APIEndPoint */ = {
 			isa = PBXGroup;
 			children = (
+				C9D943D927C41716007EE79F /* NetworkConfig.swift */,
 				C9D943D527C3FC01007EE79F /* EndPoint.swift */,
 				C9D943D727C41324007EE79F /* EndPointFactory.swift */,
 			);
@@ -267,6 +270,7 @@
 				C9D943D627C3FC01007EE79F /* EndPoint.swift in Sources */,
 				C9D9437127BCDB0E007EE79F /* MovieDetailDTO.swift in Sources */,
 				C9D943CD27C3E027007EE79F /* Region.swift in Sources */,
+				C9D943DA27C41716007EE79F /* NetworkConfig.swift in Sources */,
 				C9D9436F27BBF488007EE79F /* MovieListDTO.swift in Sources */,
 				C9D943D127C3F363007EE79F /* MovieDetailRequest.swift in Sources */,
 				C9D9437B27BD7A95007EE79F /* MovieDetailRequestDTO.swift in Sources */,
