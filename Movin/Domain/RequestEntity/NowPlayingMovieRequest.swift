@@ -7,14 +7,14 @@
 
 struct NowPlayingMovieRequest {
     let page: Int
-    let language: String?
+    let language: Language?
     let region: String?
 }
 
 extension NowPlayingMovieRequest {
     func toDTO() -> NowPlayingMovieRequestDTO {
         return NowPlayingMovieRequestDTO(page: page,
-                                         language: language,
+                                         language: language ?? .korean,
                                          region: region)
     }
 }

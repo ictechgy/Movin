@@ -5,8 +5,20 @@
 //  Created by JINHONG AN on 2022/02/17.
 //
 
-struct NowPlayingMovieRequestDTO: Encodable {
+struct NowPlayingMovieRequestDTO {
     let page: Int
-    let language: String?
+    let language: Language
     let region: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case page, language, region
+    }
+}
+
+extension NowPlayingMovieRequestDTO: Encodable {
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(language.isoCode, forKey: .language)
+        try container.encode(region, forKey: .region)
+    }
 }
