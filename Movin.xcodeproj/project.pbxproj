@@ -28,6 +28,7 @@
 		C9D943CD27C3E027007EE79F /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943CC27C3E027007EE79F /* Region.swift */; };
 		C9D943D127C3F363007EE79F /* MovieDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D027C3F363007EE79F /* MovieDetailRequest.swift */; };
 		C9D943D327C3FAC4007EE79F /* MovieSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D227C3FAC4007EE79F /* MovieSearchRequest.swift */; };
+		C9D943D627C3FC01007EE79F /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D943D527C3FC01007EE79F /* EndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		C9D943CC27C3E027007EE79F /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		C9D943D027C3F363007EE79F /* MovieDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRequest.swift; sourceTree = "<group>"; };
 		C9D943D227C3FAC4007EE79F /* MovieSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchRequest.swift; sourceTree = "<group>"; };
+		C9D943D527C3FC01007EE79F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		C9D9436B27BBD499007EE79F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9D943D427C3FBC4007EE79F /* APIEndPoint */,
 				C9D9437527BD59D2007EE79F /* RequestDTO */,
 				C9D9437427BD1D94007EE79F /* ResponseDTO */,
 			);
@@ -166,6 +169,14 @@
 				C9D943CC27C3E027007EE79F /* Region.swift */,
 			);
 			path = CommonEntity;
+			sourceTree = "<group>";
+		};
+		C9D943D427C3FBC4007EE79F /* APIEndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				C9D943D527C3FC01007EE79F /* EndPoint.swift */,
+			);
+			path = APIEndPoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				C9D9437927BD7854007EE79F /* NowPlayingMovieRequestDTO.swift in Sources */,
 				C9D943BF27C24DDF007EE79F /* MovieList.swift in Sources */,
 				C9D943D327C3FAC4007EE79F /* MovieSearchRequest.swift in Sources */,
+				C9D943D627C3FC01007EE79F /* EndPoint.swift in Sources */,
 				C9D9437127BCDB0E007EE79F /* MovieDetailDTO.swift in Sources */,
 				C9D943CD27C3E027007EE79F /* Region.swift in Sources */,
 				C9D9436F27BBF488007EE79F /* MovieListDTO.swift in Sources */,
