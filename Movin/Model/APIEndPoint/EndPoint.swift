@@ -24,7 +24,7 @@ protocol Requestable {
 }
 
 protocol ResponseRequestable {
-    associatedtype Response
+    associatedtype Response: Decodable
 }
 
 struct EndPoint<ExpectedResponse: Decodable>: Requestable, ResponseRequestable {
