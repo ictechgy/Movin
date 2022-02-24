@@ -1,14 +1,14 @@
 //
-//  EndPointFactory.swift
+//  EndPointGenerator.swift
 //  Movin
 //
 //  Created by JINHONG AN on 2022/02/22.
 //
 
-struct EndPointFactory {
+struct EndPointGenerator {
     private init() { }
     
-    static func makeEndPoint(using requestDTO: NowPlayingMovieRequestDTO) -> EndPoint<MovieListDTO> {
+    static func bringEndPoint(using requestDTO: NowPlayingMovieRequestDTO) -> EndPoint<MovieListDTO> {
         return EndPoint(httpMethod: .get,
                         path: "3/movie/now_playing",
                         isFullPath: false,
@@ -16,7 +16,7 @@ struct EndPointFactory {
                         queryParametersEncodable: requestDTO)
     }
     
-    static func makeEndPoint(with id: Int, using requestDTO: MovieDetailRequestDTO) -> EndPoint<MovieDetailDTO> {
+    static func bringEndPoint(with id: Int, using requestDTO: MovieDetailRequestDTO) -> EndPoint<MovieDetailDTO> {
         return EndPoint(httpMethod: .get,
                         path: "3/movie/\(id)",
                         isFullPath: false,
@@ -24,7 +24,7 @@ struct EndPointFactory {
                         queryParametersEncodable: requestDTO)
     }
     
-    static func makeEndPoint(using requestDTO: MovieSearchRequestDTO) -> EndPoint<MovieListDTO> {
+    static func bringEndPoint(using requestDTO: MovieSearchRequestDTO) -> EndPoint<MovieListDTO> {
         return EndPoint(httpMethod: .get,
                         path: "3/search/movie",
                         isFullPath: false,
